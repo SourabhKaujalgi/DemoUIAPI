@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="10" total="11" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="3896" started-at="2021-03-30T01:45:06 IST" finished-at="2021-03-30T01:45:10 IST">
+    <groups>
+      <group name="api">
+        <method signature="AutomationpractTest.getTocken()[pri:0, instance:DemoProj.Demo.AutomationpractTest@1a8c74e]" name="getTocken" class="DemoProj.Demo.AutomationpractTest"/>
+      </group> <!-- api -->
+    </groups>
+    <test name="Command line test" duration-ms="3896" started-at="2021-03-30T01:45:06 IST" finished-at="2021-03-30T01:45:10 IST">
+      <class name="DemoProj.Demo.AutomationpractTest">
+        <test-method status="PASS" signature="getTocken()[pri:0, instance:DemoProj.Demo.AutomationpractTest@1a8c74e]" name="getTocken" duration-ms="3825" started-at="2021-03-30T01:45:06 IST" description="To verify sign in" finished-at="2021-03-30T01:45:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTocken -->
+      </class> <!-- DemoProj.Demo.AutomationpractTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
