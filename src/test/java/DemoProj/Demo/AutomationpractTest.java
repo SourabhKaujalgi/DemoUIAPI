@@ -45,6 +45,7 @@ public class AutomationpractTest extends TestBase {
 
 	/*
 	 * @BeforeClass public void before_it() throws IOException {
+	 * 
 	 * CommonUtility.Initialization(); launch(); }
 	 */
 
@@ -76,7 +77,7 @@ public class AutomationpractTest extends TestBase {
 
 	@Test(priority = 2, description = "To verify sign in", enabled = true, groups = { "UiAutomation" })
 	public void validateSignIn() throws InterruptedException {
-		ts = TestData1.valueOf("password" + "");
+		ts = TestData1.valueOf("password");
 		sp = hp.signinclick();
 		boolean val = sp.enteremailid(emailid);
 		AssertJUnit.assertEquals(val, true);

@@ -27,7 +27,7 @@ public class HomePage {
 	@FindBy(css = "input#search_query_top")
 	WebElement searchbar;
 
-	@FindBy(xpath = "//button[@name='submit_search']")
+	@FindBy(css = "button[name='submit_search']")
 	WebElement searchbutton;
 
 	@FindBy(xpath = "//ul/li[@class='ajax_block_product col-xs-12 col-sm-6 col-md-4 first-in-line last-line first-item-of-tablet-line first-item-of-mobile-line last-mobile-line']")
@@ -42,16 +42,14 @@ public class HomePage {
 	@FindBy(xpath = "//*[@id='center_column']/ul/li/div/div[2]/h5/a")
 	WebElement Selectitem;
 
-
-	@FindBy(xpath = "//a[@title='Log in to your customer account']")
+	@FindBy(css = "a[title='Log in to your customer account']")
 	WebElement signin;
-	
+
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
-	
 
 	// WebDriverWait wait=new WebDriverWait(driver,60);
 	public String verifytitle() {
@@ -97,6 +95,7 @@ public class HomePage {
 		return new ItemPage(driver);
 
 	}
+
 	public SigninPage signinclick() throws InterruptedException {
 		signin.click();
 		return new SigninPage(driver);

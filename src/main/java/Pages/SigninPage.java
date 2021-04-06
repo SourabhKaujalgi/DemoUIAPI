@@ -23,7 +23,7 @@ public class SigninPage {
 	WebElement Signinbtn;
 
 	public boolean enteremailid(String emailinput) {
-		email.sendKeys(emailinput + "gamail.com");
+		email.sendKeys(emailinput);
 		return true;
 
 	}

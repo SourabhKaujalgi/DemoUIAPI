@@ -2,59 +2,59 @@
 <testng-results skipped="0" failed="0" ignored="4" total="11" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="33451" started-at="2021-03-29T20:08:06Z" finished-at="2021-03-29T20:08:39Z">
+  <suite name="Default suite" duration-ms="56688" started-at="2021-04-02T13:21:54Z" finished-at="2021-04-02T13:22:50Z">
     <groups>
       <group name="UiAutomation">
-        <method signature="AutomationpractTest.validateAddtocart()[pri:6, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="validateAddtocart" class="DemoProj.Demo.AutomationpractTest"/>
-        <method signature="AutomationpractTest.validateSelectitem()[pri:4, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="validateSelectitem" class="DemoProj.Demo.AutomationpractTest"/>
-        <method signature="AutomationpractTest.validateSignIn()[pri:2, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="validateSignIn" class="DemoProj.Demo.AutomationpractTest"/>
-        <method signature="AutomationpractTest.verifyHomepageDetails()[pri:1, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="verifyHomepageDetails" class="DemoProj.Demo.AutomationpractTest"/>
-        <method signature="AutomationpractTest.verifyItemdeatils()[pri:5, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="verifyItemdeatils" class="DemoProj.Demo.AutomationpractTest"/>
-        <method signature="AutomationpractTest.verifyPagesearch()[pri:3, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="verifyPagesearch" class="DemoProj.Demo.AutomationpractTest"/>
+        <method signature="AutomationpractTest.validateAddtocart()[pri:6, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="validateAddtocart" class="DemoProj.Demo.AutomationpractTest"/>
+        <method signature="AutomationpractTest.validateSelectitem()[pri:4, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="validateSelectitem" class="DemoProj.Demo.AutomationpractTest"/>
+        <method signature="AutomationpractTest.validateSignIn()[pri:2, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="validateSignIn" class="DemoProj.Demo.AutomationpractTest"/>
+        <method signature="AutomationpractTest.verifyHomepageDetails()[pri:1, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="verifyHomepageDetails" class="DemoProj.Demo.AutomationpractTest"/>
+        <method signature="AutomationpractTest.verifyItemdeatils()[pri:5, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="verifyItemdeatils" class="DemoProj.Demo.AutomationpractTest"/>
+        <method signature="AutomationpractTest.verifyPagesearch()[pri:3, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="verifyPagesearch" class="DemoProj.Demo.AutomationpractTest"/>
       </group> <!-- UiAutomation -->
       <group name="api">
-        <method signature="AutomationpractTest.getTocken()[pri:0, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="getTocken" class="DemoProj.Demo.AutomationpractTest"/>
+        <method signature="AutomationpractTest.getTocken()[pri:0, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="getTocken" class="DemoProj.Demo.AutomationpractTest"/>
       </group> <!-- api -->
     </groups>
-    <test name="Test" duration-ms="33451" started-at="2021-03-29T20:08:06Z" finished-at="2021-03-29T20:08:39Z">
+    <test name="Default test" duration-ms="56688" started-at="2021-04-02T13:21:54Z" finished-at="2021-04-02T13:22:50Z">
       <class name="DemoProj.Demo.AutomationpractTest">
-        <test-method status="PASS" signature="before_it()[pri:0, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="before_it" is-config="true" duration-ms="12356" started-at="2021-03-30T01:38:06Z" finished-at="2021-03-30T01:38:18Z">
+        <test-method status="PASS" signature="before_it()[pri:0, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="before_it" is-config="true" duration-ms="25164" started-at="2021-04-02T18:51:54Z" finished-at="2021-04-02T18:52:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before_it -->
-        <test-method status="PASS" signature="getTocken()[pri:0, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="getTocken" duration-ms="3511" started-at="2021-03-30T01:38:18Z" description="To verify sign in" finished-at="2021-03-30T01:38:22Z">
+        <test-method status="PASS" signature="getTocken()[pri:0, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="getTocken" duration-ms="8414" started-at="2021-04-02T18:52:19Z" description="To verify sign in" finished-at="2021-04-02T18:52:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTocken -->
-        <test-method status="PASS" signature="verifyHomepageDetails()[pri:1, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="verifyHomepageDetails" duration-ms="183" started-at="2021-03-30T01:38:22Z" description="To verify logo and title" finished-at="2021-03-30T01:38:22Z">
+        <test-method status="PASS" signature="verifyHomepageDetails()[pri:1, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="verifyHomepageDetails" duration-ms="186" started-at="2021-04-02T18:52:28Z" description="To verify logo and title" finished-at="2021-04-02T18:52:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomepageDetails -->
-        <test-method status="PASS" signature="validateSignIn()[pri:2, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="validateSignIn" duration-ms="4782" started-at="2021-03-30T01:38:22Z" description="To verify sign in" finished-at="2021-03-30T01:38:27Z">
+        <test-method status="PASS" signature="validateSignIn()[pri:2, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="validateSignIn" duration-ms="4705" started-at="2021-04-02T18:52:28Z" description="To verify sign in" finished-at="2021-04-02T18:52:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSignIn -->
-        <test-method status="PASS" signature="verifyPagesearch()[pri:3, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="verifyPagesearch" duration-ms="2416" started-at="2021-03-30T01:38:27Z" description="To verify search operation" finished-at="2021-03-30T01:38:29Z">
+        <test-method status="PASS" signature="verifyPagesearch()[pri:3, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="verifyPagesearch" duration-ms="2421" started-at="2021-04-02T18:52:32Z" description="To verify search operation" finished-at="2021-04-02T18:52:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPagesearch -->
-        <test-method status="PASS" signature="validateSelectitem()[pri:4, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="validateSelectitem" duration-ms="2409" started-at="2021-03-30T01:38:29Z" description="Validate select operation of searched item" finished-at="2021-03-30T01:38:32Z">
+        <test-method status="PASS" signature="validateSelectitem()[pri:4, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="validateSelectitem" duration-ms="2733" started-at="2021-04-02T18:52:35Z" description="Validate select operation of searched item" finished-at="2021-04-02T18:52:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSelectitem -->
-        <test-method status="PASS" signature="verifyItemdeatils()[pri:5, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="verifyItemdeatils" duration-ms="323" started-at="2021-03-30T01:38:32Z" description="Validate price of searched item" finished-at="2021-03-30T01:38:32Z">
+        <test-method status="PASS" signature="verifyItemdeatils()[pri:5, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="verifyItemdeatils" duration-ms="383" started-at="2021-04-02T18:52:38Z" description="Validate price of searched item" finished-at="2021-04-02T18:52:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyItemdeatils -->
-        <test-method status="PASS" signature="validateAddtocart()[pri:6, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="validateAddtocart" duration-ms="6505" started-at="2021-03-30T01:38:32Z" description="Validate add to Add to cart fouctionallity" finished-at="2021-03-30T01:38:38Z">
+        <test-method status="PASS" signature="validateAddtocart()[pri:6, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="validateAddtocart" duration-ms="11615" started-at="2021-04-02T18:52:38Z" description="Validate add to Add to cart fouctionallity" finished-at="2021-04-02T18:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAddtocart -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:DemoProj.Demo.AutomationpractTest@191a895]" name="tearDown" is-config="true" duration-ms="886" started-at="2021-03-30T01:38:38Z" finished-at="2021-03-30T01:38:39Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DemoProj.Demo.AutomationpractTest@8e6209]" name="tearDown" is-config="true" duration-ms="921" started-at="2021-04-02T18:52:50Z" finished-at="2021-04-02T18:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- DemoProj.Demo.AutomationpractTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

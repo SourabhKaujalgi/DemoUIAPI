@@ -10,10 +10,10 @@ public class CartsummaryPage {
 	WebDriver driver;
 	JavascriptExecutor js2;
 
-	@FindBy(xpath = "//span[@id='product_price_1_1_0']/span")
+	@FindBy(css = "span#product_price_1_1_470211>span")
 	WebElement unitprice;
 
-	@FindBy(xpath = "//a[@title='View my shopping cart']/span[@class='ajax_cart_quantity']")
+	@FindBy(css = "a[title='View my shopping cart']>span[class='ajax_cart_quantity']")
 	WebElement quantitysummary;
 
 	public CartsummaryPage(WebDriver driver) {
