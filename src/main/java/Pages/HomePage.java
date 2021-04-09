@@ -30,7 +30,7 @@ public class HomePage {
 	@FindBy(css = "button[name='submit_search']")
 	WebElement searchbutton;
 
-	@FindBy(xpath = "//ul/li[@class='ajax_block_product col-xs-12 col-sm-6 col-md-4 first-in-line last-line first-item-of-tablet-line first-item-of-mobile-line last-mobile-line']")
+	@FindBy(css = "ul.product_list.grid.row>li.ajax_block_product.ajax_block_product.col-xs-12.col-sm-6.col-md-4.first-in-line.last-line.first-item-of-tablet-line.first-item-of-mobile-line.last-mobile-line")
 	WebElement searchresult;
 
 	@FindBy(css = "p.alert.alert-warning")
@@ -39,7 +39,7 @@ public class HomePage {
 	@FindBy(xpath = "//*[@id='center_column']/ul/li/div//child::a[@class='quick-view']")
 	WebElement Item;
 
-	@FindBy(xpath = "//*[@id='center_column']/ul/li/div/div[2]/h5/a")
+	@FindBy(css = "div#center_column>ul>li>div>div:nth-of-type(2)>h5>a")
 	WebElement Selectitem;
 
 	@FindBy(css = "a[title='Log in to your customer account']")

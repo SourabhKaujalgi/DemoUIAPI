@@ -1,17 +1,16 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.sikuli.script.Screen;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
+
+
 
 public class ItemPage {
 	WebDriver driver;
-	public Screen screen;
 	JavascriptExecutor js;
 
 	public ItemPage(WebDriver driver) {
@@ -27,6 +26,10 @@ public class ItemPage {
 
 	@FindBy(css = "input#quantity_wanted")
 	WebElement quantity;
+	
+	@FindBy(css = "#layer_cart > div.clearfix > div.layer_cart_cart.col-xs-12.col-md-6 > div.button-container > a > span > i")
+	WebElement proceedcheckout;
+
 
 	public String getprice() {
 		String priceactual = price.getText();
@@ -42,15 +45,14 @@ public class ItemPage {
 
 	}
 
-	public CartsummaryPage addtocart() throws FindFailed, InterruptedException {
+	public CartsummaryPage addtocart() throws InterruptedException {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,600)");
 
 		Addtocart.isDisplayed();
 		Addtocart.click();
-		screen = new Screen();
-		Pattern ProcedtoCheckButton = new Pattern("C:\\workspace\\RestAutomation\\test-output\\Proceed.PNG");
-		screen.click(ProcedtoCheckButton);
+		Thread.sleep(4000);
+		proceedcheckout.click();
 		Thread.sleep(4000);
 		return new CartsummaryPage(driver);
 	}

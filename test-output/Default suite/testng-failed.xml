@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="DemoProj.Demo.AutomationpractTest">
         <methods>
-          <include name="validateSelectitem"/>
-          <include name="validateSignIn"/>
-          <include name="verifyHomepageDetails"/>
-          <include name="verifyPagesearch"/>
-          <include name="verifyItemdeatils"/>
+          <include name="tearDown"/>
+          <include name="before_it"/>
           <include name="validateAddtocart"/>
         </methods>
       </class> <!-- DemoProj.Demo.AutomationpractTest -->

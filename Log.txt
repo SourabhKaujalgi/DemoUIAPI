@@ -10,25 +10,25 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Tue, 06 Apr 2021 07:12:45 GMT
+Date: Thu, 08 Apr 2021 13:00:04 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=decf0104f879a1fc6588b07261be95a6b1617693165; expires=Thu, 06-May-21 07:12:45 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+Set-Cookie: __cfduid=d98cc527f111e5700c03354041dc3e4ed1617886804; expires=Sat, 08-May-21 13:00:04 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
 Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
 Via: 1.1 vegur
 Cache-Control: max-age=14400
 CF-Cache-Status: HIT
-Age: 568
-cf-request-id: 09479fdf110000f41ba7047000000001
+Age: 2230
+cf-request-id: 09532a91cf0000dd8b5c9a2000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=JCozKOkiZ72wofGPq4nUsNsmLGaP4SYpL13TS1COR1a%2FM6NV9t7C6ZSEOuQoO3ASzQ5MfZESvxpy4Kp6bdthVupQBZyMbyBxWp8%3D"}],"max_age":604800,"group":"cf-nel"}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=ZwVNIWwyy%2FAeQnndj36sBfiX1JsZFUOV2Hj6hcs%2BaF2JwVua7cm3Hgm0Iu1gFg8iP0eKF%2FJMgX3Mgby3%2Fv0NUuBV84b7fPjP5v4%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"max_age":604800,"report_to":"cf-nel"}
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 63b935ab4ffbf41b-LHR
+CF-RAY: 63cbad2fbd2cdd8b-SIN
 Content-Encoding: gzip
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
