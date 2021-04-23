@@ -7,6 +7,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="before_it"/>
+          <include name="validateCartsummary"/>
+          <include name="verifyItemdeatils"/>
           <include name="validateAddtocart"/>
         </methods>
       </class> <!-- DemoProj.Demo.AutomationpractTest -->

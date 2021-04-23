@@ -4,6 +4,7 @@ Pages\SigninPage.class
 Pojo\DeletePlace.class
 Pojo\GetPlace.class
 Pages\ItemPage.class
+BaseTest\TestBase.class
 Pojo\Location.class
 Pojo\AddPlace.class
 Pojo\Sapport.class
@@ -13,6 +14,8 @@ Pojo\GetPlaceLocation.class
 Resources\Payloads.class
 Resources\TestDataBuild.class
 DemoProj\Demo\CommonUtility.class
+DemoProj\Demo\LogCapture.class
 Pojo\GetUser.class
+BaseTest\UiBase.class
 Pojo\UpdatePlace.class
 Resources\TestData1.class

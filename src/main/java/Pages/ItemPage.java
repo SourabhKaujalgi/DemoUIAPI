@@ -6,6 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import BaseTest.UiBase;
 
 
 
@@ -18,8 +21,7 @@ public class ItemPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(css = "span#our_price_display")
-	WebElement price;
+	
 
 	@FindBy(xpath = "//span[text()='Add to cart']")
 	WebElement Addtocart;
@@ -31,13 +33,9 @@ public class ItemPage {
 	WebElement proceedcheckout;
 
 
-	public String getprice() {
-		String priceactual = price.getText();
-		System.out.println(priceactual);
-		return priceactual;
-	}
+	
 
-	public String entquantity(String qty) {
+	public String enterQuantity(String qty) {
 		quantity.click();
 		quantity.clear();
 		quantity.sendKeys(qty);
@@ -45,15 +43,14 @@ public class ItemPage {
 
 	}
 
-	public CartsummaryPage addtocart() throws InterruptedException {
+	public CartsummaryPage addtoCart() throws InterruptedException {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,600)");
-
+		UiBase.wait.until(ExpectedConditions.visibilityOf(Addtocart));
 		Addtocart.isDisplayed();
 		Addtocart.click();
-		Thread.sleep(4000);
+		UiBase.wait.until(ExpectedConditions.visibilityOf(proceedcheckout));
 		proceedcheckout.click();
-		Thread.sleep(4000);
 		return new CartsummaryPage(driver);
 	}
 }

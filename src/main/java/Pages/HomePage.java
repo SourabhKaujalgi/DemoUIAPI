@@ -16,6 +16,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.inject.spi.Element;
 
+import BaseTest.UiBase;
+
 public class HomePage {
 
 	WebDriver driver;
@@ -42,8 +44,8 @@ public class HomePage {
 	@FindBy(css = "div#center_column>ul>li>div>div:nth-of-type(2)>h5>a")
 	WebElement Selectitem;
 
-	@FindBy(css = "a[title='Log in to your customer account']")
-	WebElement signin;
+	@FindBy(css ="a.login")
+	WebElement signinbtn;
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -52,32 +54,31 @@ public class HomePage {
 	}
 
 	// WebDriverWait wait=new WebDriverWait(driver,60);
-	public String verifytitle() {
+	public String verifyTitle() {
 		String title = driver.getTitle();
 		return title;
 	}
 
-	public boolean verifylogo() {
+	public boolean verifyLogo() {
+		UiBase.wait.until(ExpectedConditions.visibilityOf(logoimage));
 		boolean b = logoimage.isDisplayed();
 		return b;
 	}
 
-	public boolean verifyserachdisplayed() {
+	public boolean verifySearchOption() {
+		UiBase.wait.until(ExpectedConditions.visibilityOf(searchbar));
 		boolean b = searchbar.isDisplayed();
-		System.out.println("search option observed");
 		return b;
 	}
 
-	public boolean validateserachoperation(String searchitem) {
+	public boolean validateSearchOperation(String searchitem) {
 		searchbar.click();
 		searchbar.sendKeys(searchitem);
-		System.out.println(searchitem);
 		searchbutton.click();
-
+		UiBase.wait.until(ExpectedConditions.visibilityOf(searchresult));
 		if (searchresult.isDisplayed()) {
 			return true;
 		} else if (noresult.isDisplayed()) {
-			System.out.println(noresult.getText());
 			return true;
 
 		}
@@ -85,7 +86,7 @@ public class HomePage {
 		return false;
 	}
 
-	public ItemPage selectingsearcheditem() throws InterruptedException {
+	public ItemPage selectingItem() throws InterruptedException {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,500)");
 
@@ -96,8 +97,9 @@ public class HomePage {
 
 	}
 
-	public SigninPage signinclick() throws InterruptedException {
-		signin.click();
+	public SigninPage clickSignin() throws InterruptedException {
+		
+		signinbtn.click();
 		return new SigninPage(driver);
 
 	}
